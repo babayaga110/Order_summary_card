@@ -1,0 +1,175 @@
+/*----------- Frontend Mentor ------------------- */
+
+/* --------------
+        Root
+----------------- */
+*{
+    box-sizing: border-box;
+}
+html, 
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(../image/pattern-background-mobile.svg);
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: auto;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    line-height: 1.6;
+}
+img{
+    max-width: 100%;
+}
+
+/* -----------------
+    Typography
+-------------------- */
+
+.body-title{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.body-subtitle{
+    padding: 0 0.8em;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #8a8a8a;
+}
+.payment-title{
+    font-size: 1rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 0;
+}
+.payment-subtitle{
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0;
+    color: #8a8a8a;
+    text-align: left;
+}
+
+/* a Tag */
+.link{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color:hsl(228, 45%, 44%);
+    cursor: pointer;
+}
+.link:hover{
+    color:rgba(62, 82, 163, 0.7) ;
+}
+
+/* --------------
+    Card Layout
+----------------- */
+
+.card{
+    max-width: 330px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.card-body{
+    padding: 1em;
+    margin: 0;
+}
+
+/* Payment */
+.card-payment{
+    margin: 1.5em 0;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.music-icon, 
+.payment-text, 
+.link{
+    align-self: center;
+}
+.music-icon{
+    order: 1;
+}
+.payment-text{
+    margin-right: 25px;
+    order: 2;
+}
+.link{
+    order: 3;
+}
+
+/*  Button */
+
+.btn{
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    min-width: 100%;
+    padding: 1em 0; 
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 0 13px 10px 1px rgba(56, 41, 224, 0.2);
+}
+.btn-primary:hover, 
+.btn-primary:focus{
+    background-color:rgba(56, 41, 224, 0.7) ;
+}
+.btn-secondary{
+    background-color: inherit;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 0;
+}
+.btn-secondary:hover, 
+.btn-secondary:focus{
+    background-color: inherit;
+    color: hsl(223, 47%, 23%);
+}
+
+/*--------------------
+    Media query
+--------------------- */
+@media (min-width: 600px){
+    html,body{
+        background-image: url(../image/pattern-background-desktop.svg);
+        background-position: top;
+        background-repeat: repeat-x;
+        background-size: auto;
+    }
+    .card{
+        max-width: 400px;
+    }
+    .card-body{
+        padding: 1em 2em;
+    }
+    .card-payment{
+        margin: 2em 0;
+    }
+    .payment-text{
+        margin-right: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; place-self: end center;  }
+.attribution a { color: hsl(228, 45%, 44%); }
