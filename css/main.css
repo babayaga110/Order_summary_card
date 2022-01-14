@@ -6,7 +6,10 @@
 *{
     box-sizing: border-box;
 }
-html, 
+
+html{
+    font-size: 14px;
+} 
 body{
     margin: 0;
     padding: 0;
@@ -17,7 +20,7 @@ body{
     background-repeat: repeat-x;
     background-position: top;
     background-size: auto;
-    min-height: 100vh;
+    height: 100vh;
     display: grid;
     place-content: center;
     line-height: 1.6;
@@ -71,18 +74,23 @@ img{
 ----------------- */
 
 .card{
+    /* margin: 2em 0; */
     max-width: 330px;
     background-color: #fff;
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .card-body{
     padding: 1em;
     margin: 0;
 }
 
+
 /* Payment */
+
 .card-payment{
     margin: 1.5em 0;
     background-color: hsl(225, 100%, 98%);
